@@ -23,16 +23,17 @@
         $(function(){
                 // 2 façons possible de procéder :
 
-             // 1. Une requête AJAX simple
-            $ajax('https://ipapi.co/json/').done(function(data){
+             // --1. Une requête AJAX simple
+            $.ajax('https://ipapi.co/json/').done(function(data){
                 console.log( data );
                 console.log( data.ip );
             })    
         });
 
-        //
-        $getJSON('https://ipapi.co/json/', function(data){
+        // --2.
+        $.getJSON('https://ipapi.co/json/', function(data){
 
+                //$('form').append() ou avec appendTo
                 $(`
                     <p>
                         Votre IP est surveillée : ${data.ip}  
@@ -40,7 +41,7 @@
                     </p>
                 `)
                 .css({'background':'yellow', 'color':'red'})
-                .appendTo( $('form'));
+                .appendTo('form');
         });
     
     </script>

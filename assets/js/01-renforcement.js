@@ -132,8 +132,10 @@ console.clear();
         // Aperçu dans la console
         console.log( Etudiant );
 
-        /* On peut faire `` et mettre un seul <li></li> au lieu de plusieurs '<li></li>'
-        Aussi seulement dans`` on peut pour contatener faire "${" au lieu du "+" */
+        /* On peut faire `` et mettre un seul <li></li> au lieu de plusieurs 
+        $('<li>' + Etudiant.prenom + '</li>')
+        Aussi, seulement dans``, on peut pour concatener faire "${" au lieu du "+"  
+        et ça prend egalement les sauts de ligne sans problème*/
 
         $(`
             <li>
