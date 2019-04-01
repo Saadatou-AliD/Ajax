@@ -62,7 +62,7 @@ const Contacts = [
 
     {
         prenom : "Stevenson",
-        nom : "X",
+        nom : "Y",
         age : 300
     },
 
@@ -119,7 +119,7 @@ console.clear();
 
  $(function(){
 
-    // Ici, jQuery est prêt à travailler !
+    // Ici, jQuery est prêt à travailler ! OOOUUU FAIRE  $(() => {});
      
     // Création d'une balise <ul></ul>
     const ul = $('<ul>');
